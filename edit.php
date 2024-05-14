@@ -18,7 +18,7 @@ if  (isset($_GET['id'])) {
   }
 }
 
-if (isset($_POST['update'])) {
+if (isset($_POST['actualizar'])) {
   $id = $_GET['id'];
   $nombre= $_POST['nombre'];
   $cat = $_POST['categoria'];
@@ -50,9 +50,7 @@ if (isset($_POST['update'])) {
           <div class="form-ground">
             <input type="text" name="precio" class="form-control" placeholder="Precio" style="margin-top: 10px;">
           </div>
-      <button class="btn-success" name="update">
-        Update
-      </button>
+          <button class="btn-success" name="actualizar" style="margin-top: 10px; background-color: #007C0D; color:white;">Modificar</button>
       </form>
       </div>
     </div>
